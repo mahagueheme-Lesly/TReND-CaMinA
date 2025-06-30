@@ -6,4 +6,8 @@ Python basics for neural data analysis
 
 
 ## Python specific libraries and dependencies
+- Pandas
+- Matplotlip
+- Numpy
+- Seaborn
 - Scikit-learn
