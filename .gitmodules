@@ -7,3 +7,9 @@
 [submodule "notebooks/Rwanda24/19-Fri-BackProp/DeepLearningTutorial"]
 	path = notebooks/Rwanda24/19-Fri-BackProp/DeepLearningTutorial
 	url = https://github.com/TomGeorge1234/DeepLearningTutorial
+[submodule "notebooks/Zambia25/14-Mon-NeuralCodesHopfield/HopfieldNetworkTutorial"]
+	path = notebooks/Zambia25/14-Mon-NeuralCodesHopfield/HopfieldNetworkTutorial
+	url = https://github.com/TomGeorge1234/HopfieldNetworkTutorial
+[submodule "notebooks/Zambia25/18-Fri-Regression-DeepLearning/DeepLearningTutorial"]
+	path = notebooks/Zambia25/18-Fri-Regression-DeepLearning/DeepLearningTutorial
+	url = https://github.com/TomGeorge1234/DeepLearningTutorial
