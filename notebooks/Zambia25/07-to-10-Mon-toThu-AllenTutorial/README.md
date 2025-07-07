@@ -28,7 +28,7 @@ This cell installs the allensdk and mounts the necessary data for the python env
 
 The important thing this cell does is set the “manifest_file” variable to point to the “manifest.json” file.  You *may* need to alter the “data_root” variable if you are on Windows or Linux, depending on how the hard drive is mounted.  For macOS and Colab this cell will *probably* work as written.  
 
-Importantly, you will need to set up a conda environment that has the appropriate versions of python, numpy, the allensdk, and other software.  Simply pip installing these packages will not work.  We have provided a file ‘environment.yml’ that should work.  You can set up this environment with the following conda command:
+Importantly, you will need to set up a conda environment that has the appropriate versions of python, numpy, the allensdk, and other software.  Simply pip installing these packages will not work.  We have provided a file ‘environment.yml’ that should work. You can find this file at [environment.yml](support_files/environment.yml).  You can set up this environment with the following conda command:
 
 ```
 conda env create -f environment.yml -n trend2025
