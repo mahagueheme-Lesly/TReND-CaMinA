@@ -14,9 +14,9 @@ How to access data for the Allen Brain Observatory and Allen Institute tutorials
 
 	When creating a notebook for a project, if you use Colab, then you will need to copy the initial cell from one of our notebooks and include it at the top.  This cell looks like:
 
-![alt text](support_files/Colab_setup_cell.png)
+![Colab setup cell](support_files/Colab_setup_cell.png)
 
-	This cell installs the allensdk and mounts the necessary data for the python environment associated with the Colab notebook.  Importantly, the kernel will need to restart, which is why the “exit()” command is at the end.  This will generate an error, but it should be safe to continue running the next cell.  It will NOT be necessary to repeat this cell when using the same runtime environment on Colab, although it shouldn’t harm anything to do so.
+This cell installs the allensdk and mounts the necessary data for the python environment associated with the Colab notebook.  Importantly, the kernel will need to restart, which is why the “exit()” command is at the end.  This will generate an error, but it should be safe to continue running the next cell.  It will NOT be necessary to repeat this cell when using the same runtime environment on Colab, although it shouldn’t harm anything to do so.
 
 
 2.  Hard Drives with Allen Institute data
@@ -24,8 +24,9 @@ How to access data for the Allen Brain Observatory and Allen Institute tutorials
 	We’ve provided hard drives that are yours to keep.  These drives contain a portion of the Allen Institute Visual Coding 2P data set.  We’ve included a cell in our notebooks that will mount data from the appropriate location regardless of whether you are using Colab, or running a Jupyter notebook locally on your laptop.  This cell looks like:
 
 
+![drive_path setup cell](support_files/drive_path_setup_cell.png)
 
-	The important thing this cell does is set the “manifest_file” variable to point to the “manifest.json” file.  You *may* need to alter the “data_root” variable if you are on Windows or Linux, depending on how the hard drive is mounted.  For macOS and Colab this cell will *probably* work as written.  
+The important thing this cell does is set the “manifest_file” variable to point to the “manifest.json” file.  You *may* need to alter the “data_root” variable if you are on Windows or Linux, depending on how the hard drive is mounted.  For macOS and Colab this cell will *probably* work as written.  
 
 	Importantly, you will need to set up a conda environment that has the appropriate versions of python, numpy, the allensdk, and other software.  Simply pip installing these packages will not work.  We have provided a file ‘environment.yml’ that should work.  You can set up this environment with the following conda command:
 
