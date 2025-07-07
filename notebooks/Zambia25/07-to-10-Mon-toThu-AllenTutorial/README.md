@@ -28,35 +28,37 @@ This cell installs the allensdk and mounts the necessary data for the python env
 
 The important thing this cell does is set the “manifest_file” variable to point to the “manifest.json” file.  You *may* need to alter the “data_root” variable if you are on Windows or Linux, depending on how the hard drive is mounted.  For macOS and Colab this cell will *probably* work as written.  
 
-	Importantly, you will need to set up a conda environment that has the appropriate versions of python, numpy, the allensdk, and other software.  Simply pip installing these packages will not work.  We have provided a file ‘environment.yml’ that should work.  You can set up this environment with the following conda command:
+Importantly, you will need to set up a conda environment that has the appropriate versions of python, numpy, the allensdk, and other software.  Simply pip installing these packages will not work.  We have provided a file ‘environment.yml’ that should work.  You can set up this environment with the following conda command:
 
-	conda env create -f environment.yml -n trend2025
-
-	and then you can activate this environment with the following command:
-
-	conda activate trend2025
-
-	You should now be able to run the notebooks locally.
+```
+conda env create -f environment.yml -n trend2025
+```
+and then you can activate this environment with the following command:
+```
+conda activate trend2025
+```
+You should now be able to run the notebooks locally.
 
 
 3.  Allen Institute data copied locally to your laptop
 
 	
-	If necessary, we have just the subset of the data that is being used in the tutorials available to be copied onto your laptop.  The instructors will provide this data for you.  It will be in a folder called ‘allen_brain_observatory’.  
+If necessary, we have just the subset of the data that is being used in the tutorials available to be copied onto your laptop.  The instructors will provide this data for you.  It will be in a folder called ‘allen_brain_observatory’.  
 
-	The setup is nearly identical to #2 above.  The difference is where the ‘manifest_file’ variable points.  Set ‘data_root’ to point to the location of ‘allen_brain_observatory’.
-
-	data_root = /path/to/allen_brain_observatory
-
-	and then copy the last two lines of the cell above in #2.
-
-	manifest_file = os.path.join(data_root,'allen-brain-observatory/visual-coding-2p/manifest.json')
-	boc = BrainObservatoryCache(manifest_file=manifest_file)
+The setup is nearly identical to #2 above.  The difference is where the ‘manifest_file’ variable points.  Set ‘data_root’ to point to the location of ‘allen_brain_observatory’.
+```
+data_root = /path/to/allen_brain_observatory
+```
+and then copy the last two lines of the cell above in #2.
+```
+manifest_file = os.path.join(data_root,'allen-brain-observatory/visual-coding-2p/manifest.json')
+boc = BrainObservatoryCache(manifest_file=manifest_file)
+```
 
 4.  Downloading Allen Institute data. - NOT RECOMMENDED
 
-	If necessary, you can download any data you need yourself.  To do this, assign ‘manifest_file’ to a location you want ‘manifest.json’ to be and then use the last line of the cell above.
-
-	boc = BrainObservatoryCache(manifest_file=manifest_file)
-
-	When you request data, it will be downloaded to your local machine.  For most analyses this will be prohibitive and we do not recommend it.  
+If necessary, you can download any data you need yourself.  To do this, assign ‘manifest_file’ to a location you want ‘manifest.json’ to be and then use the last line of the cell above.
+```
+boc = BrainObservatoryCache(manifest_file=manifest_file)
+```
+When you request data, it will be downloaded to your local machine.  For most analyses this will be prohibitive and we do not recommend it.  
