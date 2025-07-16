@@ -1,8 +1,13 @@
 ## Teaching topics
 
 Machine Learning methods for neural data analysis
+- Classification
+- Nearest Neighbors
 - Logistic regression
 
 
 ## Python specific libraries and dependencies
-- Scikit-learn
+- numpy
+- scipy
+- matplotlib
+- ipywidgets
